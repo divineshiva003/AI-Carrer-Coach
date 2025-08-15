@@ -177,6 +177,7 @@ export async function updateUser(data) {
     return result.user;
   } catch (error) {
     console.error("Error updating user and industry:", error.message);
+    // console.log("Inside catch block");
     throw new Error("Failed to update profile");
   }
 }
@@ -206,6 +207,7 @@ export async function getUserOnboardingStatus() {
     };
   } catch (error) {
     console.error("Error checking onboarding status:", error);
+    // console.log("Inside catch block");
     throw new Error("Failed to check onboarding status");
   }
 }

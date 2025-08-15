@@ -10,7 +10,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from './ui/button'
-import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from 'lucide-react'
+import { Icon, ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from 'lucide-react'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -20,6 +20,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { checkUser } from '@/lib/checkUser'
+import { targetArrow } from "@lucide/lab";
 
 
 const Header = async() => {
@@ -66,6 +67,12 @@ const Header = async() => {
                                     <Link href={'/interview'} className='flex items-center gap-2'>
                                         <GraduationCap className='h-4 w-4' />
                                         <span>Interview prep</span>
+                                    </Link>
+                                </DropdownMenuItem>
+                                <DropdownMenuItem>
+                                    <Link href={'/practice'} className='flex items-center gap-2'>
+                                        <Icon iconNode={targetArrow} size={32} outline-color="color-mix(in oklab, var(--ring) 50%, transparent" strokeWidth={2} />
+                                        <span>Practice</span>
                                     </Link>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
