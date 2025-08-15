@@ -1,4 +1,4 @@
-const question = [
+const questions = [
     {
         id:1,
       "question": "A train 120 meters long passes a telegraph post in 10 seconds. What is the speed of the train?",
