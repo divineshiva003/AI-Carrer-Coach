@@ -1,4 +1,4 @@
-/* @import "tailwindcss";
+ @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -159,7 +159,7 @@
 }
 
 
-.hero-image-wrapper{
+/*.hero-image-wrapper{
   perspective: 1000px;
 }
 
@@ -176,7 +176,7 @@
 
 
 
-
+/* 
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -289,18 +289,18 @@
   --sidebar-accent-foreground: rgb(250, 250, 250);
   --sidebar-border: rgba(255, 255, 255, 0.1);
   --sidebar-ring: rgb(140, 140, 140);
-}
+} */
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
 
-.grid-background{
+/* .grid-background{
   position: fixed;
   top: 0;
   left: 0;
@@ -315,10 +315,10 @@
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
-}
+} */
 
-.grid-background::before{
-  content: "";
+/* .grid-background::before{ */
+  /* content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -331,7 +331,7 @@
   .gradient{
     @apply bg-gradient-to-b from-gray-400 via-gray-200 to-gray-600;
   }
-} 
+}  */
 
 .gradient-title{
   @apply bg-gradient-to-b from-gray-400 via-gray-200 to-gray-600 font-extrabold tracking-tighter text-transparent bg-clip-text pb-2 pr-2;
